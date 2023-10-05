@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- Remove Projects -->
+  <remove-project name="device/google/raviole" />
+
+  <!-- Manifest -->
+  <project path="device/google/raviole" name="RisingOSS-devices/android_device_google_raviole" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+</manifest>
