@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".."
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+
+  <remote name="aosp"
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
   <default revision="refs/tags/android-14.0.0_r2"
            remote="aosp"
+           sync-c="true"
+           sync-f="true" 
            sync-j="4" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r2"/>
@@ -1260,4 +1269,6 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+  
+  <include name="rising.xml" />
 </manifest>

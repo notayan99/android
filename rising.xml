@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- Remove Projects -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Settings" />
+  
+  <!-- Build  -->
+  <project path="build/soong" name="minaripenguin/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="build/make" name="minaripenguin/android_build" groups="pdk" remote="github" revision="fourteen" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <!-- Manifest -->
+  <project path="android" name="minaripenguin/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="minaripenguin/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <!-- AOSP Packages  -->
+  <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
+  <project path="packages/apps/Settings" name="minaripenguin/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen" />
+</manifest>
