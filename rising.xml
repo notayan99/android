@@ -24,9 +24,14 @@
 
   <!-- Manifest -->
   <project path="android" name="minaripenguin/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+
   <!-- Frameworks -->
   <project path="frameworks/base" name="minaripenguin/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+
   <!-- AOSP Packages  -->
   <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
   <project path="packages/apps/Settings" name="minaripenguin/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen" />
+  
+   <!-- Vendor  -->
+  <project path="vendor/rising" name="minaripenguin/android_vendor_rising" groups="pdk-fs" remote="github" revision="fourteen" />
 </manifest>
