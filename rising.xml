@@ -4,6 +4,7 @@
   <!-- Remove Projects -->
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/av" />
@@ -36,6 +37,7 @@
   <project path="android" name="RisingOS-staging/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
   
   <project path="art" name="RisingOS-staging/android_art" remote="github" groups="pdk" revision="fourteen-staging" />
+  <project path="bionic" name="RisingOS-staging/android_bionic" remote="github" groups="pdk" revision="fourteen-staging" />
   
   <!-- Recovery -->
   <project path="bootable/recovery" name="RisingOS-staging/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
