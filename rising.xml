@@ -3,11 +3,14 @@
   
   <!-- Remove Projects -->
   <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/art" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/system/core" />
   
   <!-- Build  -->
   <project path="build/soong" name="minaripenguin/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen" >
@@ -26,15 +29,23 @@
   <!-- Manifest -->
   <project path="android" name="minaripenguin/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
   
+  <project path="art" name="minaripenguin/android_art" remote="github" groups="pdk" revision="fourteen" />
+  
   <!-- Recovery -->
   <project path="bootable/recovery" name="minaripenguin/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="minaripenguin/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="frameworks/native" name="minaripenguin/android_frameworks_native" remote="github" groups="pdk" revision="fourteen" />
+
+  <!-- Non-AOSP Packages  -->
+  <project path="packages/apps/Backgrounds" name="minaripenguin/android_packages_apps_Backgrounds" remote="github" revision="fourteen" />
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
   <project path="packages/apps/Settings" name="minaripenguin/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen" />
+  
+  <project path="system/core" name="minaripenguin/android_system_core" remote="github" groups="pdk" revision="fourteen" />
   
    <!-- Vendor  -->
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
