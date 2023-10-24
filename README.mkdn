@@ -1,0 +1,32 @@
+<p align="center">
+<img src="https://github.com/RisingTechOSS/android/blob/thirteen/risingOS_banner.png">
+</p>
+
+What is RisingOS?
+---------------
+risingOS is A FREE OpenSource Aftermarket Android Operating System that aims to bring unique and fresh user experience.
+
+
+Getting Started
+---------------
+**Initialize local repository (thanks to apon77 for repo init script)**
+
+```bash
+repo init --depth=1 --no-repo-verify -u https://github.com/RisingOS-staging/android --git-lfs -g default,-mips,-darwin,-notdefault
+```
+**in case of repo syncing failures try this instead**
+
+```bash
+repo init -u https://github.com/RisingOS-staging/android -b fourteen-staging --git-lfs
+```
+
+**Sync up with this command:**
+```bash
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+
+```
+
+
+
+
+
