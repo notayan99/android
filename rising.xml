@@ -19,11 +19,11 @@
   <remove-project name="platform/system/vold" />
   
   <!-- Build  -->
-  <project path="build/soong" name="minaripenguin/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen" >
+  <project path="build/soong" name="RisingOS-staging/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen-staging" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="build/make" name="minaripenguin/android_build" groups="pdk" remote="github" revision="fourteen" >
+  <project path="build/make" name="RisingOS-staging/android_build" groups="pdk" remote="github" revision="fourteen-staging" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -33,37 +33,37 @@
   </project>
 
   <!-- Manifest -->
-  <project path="android" name="minaripenguin/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="android" name="RisingOS-staging/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
   
-  <project path="art" name="minaripenguin/android_art" remote="github" groups="pdk" revision="fourteen" />
+  <project path="art" name="RisingOS-staging/android_art" remote="github" groups="pdk" revision="fourteen-staging" />
   
   <!-- Recovery -->
-  <project path="bootable/recovery" name="minaripenguin/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="bootable/recovery" name="RisingOS-staging/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="minaripenguin/android_frameworks_av" remote="github" groups="pdk" revision="fourteen" />
-  <project path="frameworks/base" name="minaripenguin/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
-  <project path="frameworks/libs/systemui" name="minaripenguin/android_frameworks_libs_systemui" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
-  <project path="frameworks/native" name="minaripenguin/android_frameworks_native" remote="github" groups="pdk" revision="fourteen" />
+  <project path="frameworks/av" name="RisingOS-staging/android_frameworks_av" remote="github" groups="pdk" revision="fourteen-staging" />
+  <project path="frameworks/base" name="RisingOS-staging/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
+  <project path="frameworks/libs/systemui" name="RisingOS-staging/android_frameworks_libs_systemui" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
+  <project path="frameworks/native" name="RisingOS-staging/android_frameworks_native" remote="github" groups="pdk" revision="fourteen-staging" />
 
   <!-- Non-AOSP Packages  -->
-  <project path="packages/apps/Backgrounds" name="minaripenguin/android_packages_apps_Backgrounds" remote="github" revision="fourteen" />
+  <project path="packages/apps/Backgrounds" name="RisingOS-staging/android_packages_apps_Backgrounds" remote="github" revision="fourteen-staging" />
 
   <!-- AOSP Packages  -->
-  <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
-  <project path="packages/apps/Settings" name="minaripenguin/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen" />
-  <project path="packages/apps/Personalizations" name="minaripenguin/android_packages_apps_Personalizations" groups="pdk-fs" remote="github" revision="fourteen" />
-  <project path="packages/modules/Permission" name="minaripenguin/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="github" revision="fourteen" />
+  <project path="packages/apps/Launcher3" name="RisingOS-staging/android_packages_apps_Launcher3" remote="github" revision="fourteen-staging" />
+  <project path="packages/apps/Settings" name="RisingOS-staging/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen-staging" />
+  <project path="packages/apps/Personalizations" name="RisingOS-staging/android_packages_apps_Personalizations" groups="pdk-fs" remote="github" revision="fourteen-staging" />
+  <project path="packages/modules/Permission" name="RisingOS-staging/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="github" revision="fourteen-staging" />
   
-  <project path="system/core" name="minaripenguin/android_system_core" remote="github" groups="pdk" revision="fourteen" />
-  <project path="system/memory/lmkd" name="minaripenguin/android_system_memory_lmkd" remote="github" groups="pdk" revision="fourteen" />
-  <project path="system/sepolicy" name="minaripenguin/android_system_sepolicy" remote="github" groups="pdk" revision="fourteen" />
-  <project path="system/vold" name="minaripenguin/android_system_vold" remote="github" groups="pdk" revision="fourteen" />
+  <project path="system/core" name="RisingOS-staging/android_system_core" remote="github" groups="pdk" revision="fourteen-staging" />
+  <project path="system/memory/lmkd" name="RisingOS-staging/android_system_memory_lmkd" remote="github" groups="pdk" revision="fourteen-staging" />
+  <project path="system/sepolicy" name="RisingOS-staging/android_system_sepolicy" remote="github" groups="pdk" revision="fourteen-staging" />
+  <project path="system/vold" name="RisingOS-staging/android_system_vold" remote="github" groups="pdk" revision="fourteen-staging" />
 
    <!-- Vendor  -->
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
-  <project path="vendor/google/interfaces" name="minaripenguin/android_vendor_google_interfaces" groups="pdk-fs" remote="github" revision="fourteen" />
-  <project path="vendor/pixel-framework" name="minaripenguin/vendor_pixel-framework" remote="github" revision="fourteen" />
-  <project path="vendor/rising" name="minaripenguin/android_vendor_rising" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="vendor/google/interfaces" name="RisingOS-staging/android_vendor_google_interfaces" groups="pdk-fs" remote="github" revision="fourteen-staging" />
+  <project path="vendor/pixel-framework" name="RisingOS-staging/vendor_pixel-framework" remote="github" revision="fourteen-staging" />
+  <project path="vendor/rising" name="RisingOS-staging/android_vendor_rising" groups="pdk-fs" remote="github" revision="fourteen-staging" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
 </manifest>
