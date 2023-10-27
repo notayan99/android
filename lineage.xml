@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ <project path="lineage/scripts" remote="github" name="LineageOS/scripts" groups="tools" revision="master" />
+  <project path="prebuilts/extract-tools" remote="github" name="LineageOS/android_prebuilts_extract-tools" revision="lineage-20.0" clone-depth="1" />
+  <project path="tools/extract-utils" remote="github" name="LineageOS/android_tools_extract-utils" revision="lineage-20.0" />
+</manifest>
