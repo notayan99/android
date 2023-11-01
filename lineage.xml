@@ -8,6 +8,6 @@
   <project path="external/mksh" remote="github" name="LineageOS/android_external_mksh" revision="lineage-21.0" />
   <project path="packages/modules/adb" remote="github" name="LineageOS/android_packages_modules_adb" revision="lineage-21.0" />
   <project path="lineage/scripts" remote="github" name="LineageOS/scripts" groups="tools" revision="master" />
-  <project path="prebuilts/extract-tools" remote="github" name="LineageOS/android_prebuilts_extract-tools" revision="lineage-20.0" clone-depth="1" />
-  <project path="tools/extract-utils" remote="github" name="LineageOS/android_tools_extract-utils" revision="lineage-20.0" />
+  <project path="prebuilts/extract-tools" remote="github" name="LineageOS/android_prebuilts_extract-tools" revision="lineage-21.0" clone-depth="1" />
+  <project path="tools/extract-utils" remote="github" name="LineageOS/android_tools_extract-utils" revision="lineage-21.0" />
 </manifest>
