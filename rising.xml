@@ -7,6 +7,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
@@ -38,6 +39,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="minaripenguin/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="frameworks/libs/systemui" name="RisingOS-staging/android_frameworks_libs_systemui" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
   <project path="frameworks/native" name="minaripenguin/android_frameworks_native" remote="github" groups="pdk" revision="fourteen" />
 
   <!-- Non-AOSP Packages  -->
