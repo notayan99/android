@@ -7,6 +7,7 @@
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/libs/systemui" />
@@ -38,9 +39,15 @@
   
   <project path="art" name="RisingOS-staging/android_art" remote="github" groups="pdk" revision="fourteen-staging" />
   <project path="bionic" name="RisingOS-staging/android_bionic" remote="github" groups="pdk" revision="fourteen-staging" />
-  
+
+  <!-- Device -->
+  <project path="device/rising/sepolicy" name="RisingOS-staging/android_device_rising_sepolicy" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
+
   <!-- Recovery -->
   <project path="bootable/recovery" name="RisingOS-staging/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="RisingOS-staging/android_external_tinycompress" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="RisingOS-staging/android_frameworks_av" remote="github" groups="pdk" revision="fourteen-staging" />
@@ -56,7 +63,8 @@
   <project path="packages/apps/Settings" name="RisingOS-staging/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen-staging" />
   <project path="packages/apps/Personalizations" name="RisingOS-staging/android_packages_apps_Personalizations" groups="pdk-fs" remote="github" revision="fourteen-staging" />
   <project path="packages/modules/Permission" name="RisingOS-staging/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="github" revision="fourteen-staging" />
-  
+
+  <!-- System  -->
   <project path="system/core" name="RisingOS-staging/android_system_core" remote="github" groups="pdk" revision="fourteen-staging" />
   <project path="system/memory/lmkd" name="RisingOS-staging/android_system_memory_lmkd" remote="github" groups="pdk" revision="fourteen-staging" />
   <project path="system/sepolicy" name="RisingOS-staging/android_system_sepolicy" remote="github" groups="pdk" revision="fourteen-staging" />
