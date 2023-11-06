@@ -18,6 +18,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
   
   <!-- Build  -->
@@ -68,6 +69,7 @@
   <project path="system/core" name="RisingOS-staging/android_system_core" remote="github" groups="pdk" revision="fourteen-staging" />
   <project path="system/memory/lmkd" name="RisingOS-staging/android_system_memory_lmkd" remote="github" groups="pdk" revision="fourteen-staging" />
   <project path="system/sepolicy" name="RisingOS-staging/android_system_sepolicy" remote="github" groups="pdk" revision="fourteen-staging" />
+  <project path="system/update_engine" name="RisingOS-staging/android_system_update_engine" remote="github" groups="pdk" revision="fourteen-staging" />
   <project path="system/vold" name="RisingOS-staging/android_system_vold" remote="github" groups="pdk" revision="fourteen-staging" />
 
    <!-- Vendor  -->
