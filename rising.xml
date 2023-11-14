@@ -58,6 +58,7 @@
 
   <!-- Non-AOSP Packages  -->
   <project path="packages/apps/Backgrounds" name="RisingOS-staging/android_packages_apps_Backgrounds" remote="github" revision="fourteen-staging" />
+  <project path="packages/apps/GameSpace" name="RisingOS-staging/android_packages_apps_GameSpace" remote="github" revision="fourteen-staging" />
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Launcher3" name="RisingOS-staging/android_packages_apps_Launcher3" remote="github" revision="fourteen-staging" />
@@ -73,6 +74,7 @@
   <project path="system/vold" name="RisingOS-staging/android_system_vold" remote="github" groups="pdk" revision="fourteen-staging" />
 
    <!-- Vendor  -->
+  <project path="vendor/addons" name="RisingOS-staging/android_vendor_addons" groups="pdk-fs" remote="github" revision="fourteen-staging" />
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
   <project path="vendor/google/interfaces" name="RisingOS-staging/android_vendor_google_interfaces" groups="pdk-fs" remote="github" revision="fourteen-staging" />
   <project path="vendor/pixel-framework" name="RisingOS-staging/vendor_pixel-framework" remote="github" revision="fourteen-staging" />
