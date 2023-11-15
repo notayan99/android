@@ -12,6 +12,7 @@
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/google/pixel" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/modules/Permission" />
@@ -46,6 +47,7 @@
   <project path="device/qcom/sepolicy-legacy-um" name="RisingOS-staging/android_device_qcom_sepolicy" remote="github" groups="qcom,sdm660" revision="fourteen-legacy-um" />
 
   <!-- Hardware -->
+  <project path="hardware/google/pixel" name="RisingOS-staging/android_hardware_google_pixel" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
   <project path="hardware/rising/interfaces" name="RisingOS-staging/android_hardware_rising_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
 
   <!-- Recovery -->
