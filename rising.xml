@@ -22,7 +22,7 @@
   <remove-project name="platform/system/vold" />
   
   <!-- Build  -->
-  <project path="build/soong" name="RisingTechOSS/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen" >
+  <project path="build/soong" name="RisingOS-staging/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen-staging" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -42,7 +42,11 @@
   <project path="bionic" name="RisingTechOSS/android_bionic" remote="github" groups="pdk" revision="fourteen" />
 
   <!-- Device -->
-  <project path="device/rising/sepolicy" name="RisingTechOSS/android_device_rising_sepolicy" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="device/rising/sepolicy" name="RisingOS-staging/android_device_rising_sepolicy" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
+  <project path="device/qcom/sepolicy-legacy-um" name="RisingOS-staging/android_device_qcom_sepolicy" remote="github" groups="qcom,sdm660" revision="fourteen-legacy-um" />
+
+  <!-- Hardware -->
+  <project path="hardware/rising/interfaces" name="RisingOS-staging/android_hardware_rising_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
 
   <!-- Recovery -->
   <project path="bootable/recovery" name="RisingTechOSS/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
@@ -78,6 +82,6 @@
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
   <project path="vendor/google/interfaces" name="RisingTechOSS/android_vendor_google_interfaces" groups="pdk-fs" remote="github" revision="fourteen" />
   <project path="vendor/pixel-framework" name="RisingTechOSS/vendor_pixel-framework" remote="github" revision="fourteen" />
-  <project path="vendor/rising" name="RisingTechOSS/android_vendor_rising" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="vendor/rising" name="RisingOS-staging/android_vendor_rising" groups="pdk-fs" remote="github" revision="fourteen-staging" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
 </manifest>
