@@ -13,6 +13,7 @@
   <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/modules/Permission" />
@@ -50,6 +51,7 @@
   <project path="hardware/google/pixel" name="RisingOS-staging/android_hardware_google_pixel" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
   <project path="hardware/qcom-caf/sm8150/audio" remote="github" name="RisingOS-staging/android_hardware_qcom_audio" groups="qcom,msmnile" revision="fourteen-caf-sm8150" />
   <project path="hardware/rising/interfaces" name="RisingOS-staging/android_hardware_rising_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
+  <project path="hardware/interfaces" name="RisingOS-staging/android_hardware_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
 
   <!-- Recovery -->
   <project path="bootable/recovery" name="RisingTechOSS/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
