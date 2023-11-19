@@ -41,7 +41,7 @@
   <project path="android" name="RisingTechOSS/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
   
   <project path="art" name="RisingTechOSS/android_art" remote="github" groups="pdk" revision="fourteen" />
-  <project path="bionic" name="RisingTechOSS/android_bionic" remote="github" groups="pdk" revision="fourteen" />
+  <project path="bionic" name="RisingOS-staging/android_bionic" remote="github" groups="pdk" revision="fourteen-staging" />
 
   <!-- Device -->
   <project path="device/rising/sepolicy" name="RisingOS-staging/android_device_rising_sepolicy" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen-staging" />
